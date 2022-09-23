@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 500px 1fr;
+}
+
+.first{
+    background-image: url(./img/pexels-photo-13292189.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    width: 95%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+nav{
+    display: flex;
+    color: white;
+}
+nav p{
+    margin-left: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+nav p:hover{
+    opacity: .6;
+}
+nav a{
+    padding: 20px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav :nth-child(4){
+    letter-spacing: .1em;
+    font-weight: 800;
+
+}
+.headerContent{
+    margin-top: 50px;
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    height: 50px;
+    width: 130px;
+    transition: all ease .2s;
+}
+.logo:hover{
+    opacity: .5;
+}
+.inputHolder{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputHolder input{
+    background-color: white;
+    display: flex;
+    flex: 1;
+    color: #7f7f7f;
+    font-size: 18px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+.search{
+    height: 15px;
+    width: 30px;
+    margin-right: 20px;
+}
+.Bigtxt h1{
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 40px;
+    letter-spacing: -.02em;
+    color: white;
+}
+.smalltxt{
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+}
+.smalltxt ul{
+    display: flex;
+    list-style: none;
+}
+.smalltxt li{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.smalltxt li:hover{
+    opacity: .8;
+}
+.LastHeader{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 600;
+    color: white;
+    opacity: .9;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.main{
+    display: grid;
+    grid-template-rows: 15vh 15vh 1fr;
+}
+.MainNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    background-color: white;
+}
+.MainNav a{
+    margin-left: 30px;
+    color: #4a4a4a;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.MainNav :nth-child(1){
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+.selectNAv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selectNAv :nth-child(1){
+    margin-left: 70px;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 31x;
+    letter-spacing: -.015em;
+    color: #2c343e;
+}
+.selectNAv :nth-child(2){
+    margin-right: 70px;
+    color: #2c343e;
+    padding: 15px 30px;
+    border: 1px solid #dfdfe0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+.selectNAv :nth-child(2):hover{
+    border: 2px solid #dfdfe0;
+}
+.gridContent{
+    margin-left: 70px;
+    margin-right: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+
+}
+.col1{
+    display: grid;
+    grid-template-rows: 670px 670px 550px 670px;
+    row-gap: 30px;
+}
+.row{
+    background-color: #2c343e;
+    
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+img:hover{
+   opacity: .8;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .2s;
+}
+video:hover{
+    opacity: .9;
+ }
+
+.col2{
+    display: grid;
+    grid-template-rows: 550px 650px 600px 650px;
+    row-gap: 30px;
+
+}
+.col3{
+    display: grid;
+    grid-template-rows: 650px 690px 650px 650px;
+    row-gap: 30px;
+}
